@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1_가시속성</title>
+    <!-- 
+        날짜 : 2022/09/19
+        이름 : 김철학
+        내용 : CSs 가시속성 실습하기
+
+        가시속성(display)
+        display : none
+         - 태그요소를 브라우저 화면에서 제거(처리공간 포함)
+         - visivility: hidden은 처리공간 남은
+        display: block
+        - 태그요소를 block형식으로 변환
+        - 세로방향, 출력, width/hieght 적용
+        
+        display:inline
+        - 태그요소를 inline 형식으로 변환
+        - 가로방향, 출력,  width/hieght 적용 안됨
+        
+        display:inline-block
+        - 태그요소를 inline-block 형식으로 변환
+        - 가로방향, 출력,  width/hieght 적용 안됨
+     -->
+     <style>
+        div > span {background-color: orange;}
+        div > div{background-color: green;}
+
+        .box1 > span:first-child{display: none;}
+        .box1 > span:nth-child(2){visibility: hidden;}
+
+        .box2 > span:nth-child(2){display: block;}
+
+        .box3 > div:nth-child(2){display: inline;}
+        .box4 > div {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+
+     </style>
+</head>
+<body>
+    <h3>가시속성</h3>
+
+    <h4>dispaly: none</h4>
+    <div class="box1">
+        <span>TEXT1</span>
+        <span>TEXT2</span>
+        <span>TEXT3</span>
+    </div>
+    <h4>dispaly: none</h4>
+    <div class="box2">
+        <span>TEXT1</span>
+        <span>TEXT2</span>
+        <span>TEXT3</span>
+    </div>
+    <h4>dispaly: none</h4>
+    <div class="box3">
+        <span>TEXT1</span>
+        <div>TEXT2</div>
+        <span>TEXT3</span>
+    </div>
+    <h4>dispaly: none</h4>
+    <div class="box4">
+        <span>TEXT1</span>
+        <div>TEXT2</div>
+        <span>TEXT3</span>
+    </div>
+    
+</body>
+</html>
