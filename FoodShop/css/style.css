@@ -1,0 +1,394 @@
+*{margin: 0; padding: 0; font: normal 12px "noto sans korean";}
+ul,ol{list-style: none;}
+a{text-decoration: none; color: #111;}
+#wrapper{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+header div{
+    width: 100%;
+    box-sizing: border-box;
+}
+header > div > *{
+    width: 1100px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+header > div:nth-child(1){
+    height: 36px;
+    border-bottom: 1px solid #dcdcdc;
+    box-sizing: border-box;
+}
+header > div > div > p{
+    float: right;
+    margin-top: 10px;
+}
+header > div > div > p > a{
+}
+
+/* 로고 */
+header > div:nth-child(2){
+    height: 100px;
+}
+
+header > div:nth-child(2) > article{
+    position: relative;
+}
+header > div:nth-child(2) > article > .shopping{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+header > div:nth-child(2) > article > .shopping >span:nth-of-type(1){
+    color: #ff6a00;
+    font-size: 15px;
+    font-weight: 500;
+}
+header > div:nth-child(2) > article > .shopping >span:nth-of-type(2){
+    font-size: 12px;
+}
+
+header > div:nth-child(2) > article > .logo{
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    margin-left: -173px;
+}
+
+header > div:nth-child(2) > article > .onday_txt{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+
+
+/* 네비게이션 */
+header > div:nth-child(3){
+    height: 54px;
+    background-color: #40382e;
+}
+header > div:nth-child(3) > nav > ul{
+    width: 100%;
+    height: 100%;
+}
+header > div:nth-child(3) > nav > ul li{
+    float: left;
+    width: 11.11%;
+    height: 100%;
+}
+header > div:nth-child(3) > nav > ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 54px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+header > div:nth-child(3) > nav > ul li a:hover{
+    color: red;
+}
+/* main */
+
+main{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+main > section{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+main > section > article{
+    width: 1100px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* 슬라이드 */
+
+main > .slider{
+    height: 352px;
+    background-color: #ffeed4;
+}
+main > .slider > article{}
+main > .slider > article > ul{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+main > .slider > article > ul > li{}
+main > .slider > article > ul > li:nth-child(1){
+    left: 0;
+    top: 0;
+}
+main > .slider > article > ul > li img{}
+
+/* go */
+main > .go{
+    height: 520px;
+}
+main > .go > article {
+    padding: 30px 10px;
+    box-sizing: border-box;
+}
+main > .go > article > div{
+    float: left;
+    box-sizing: border-box;
+}
+main > .go > article > div:nth-child(1){
+    width: 412px;
+    height: 450px;
+}
+main > .go > article > div:nth-child(2){
+    width: 322px;
+    height: 220px;
+    margin-left: 11px;
+}
+main > .go > article > div:nth-child(3){
+    float: right;
+    width: 322px;
+    height: 220px;
+}
+main > .go > article > div:nth-child(4){
+    width: 322px;
+    height: 220px;
+    margin-left: 11px;
+    margin-top: 10px;
+}
+main > .go > article > div:nth-child(5){
+    float: right;
+    width: 322px;
+    height: 220px;
+    margin-top: 10px;
+}
+
+/* oneday */
+
+main > .oneday{
+    height: 190px;
+    background-image: url(../img/oneday_bg.png);
+    background-size: cover;
+    background-position: 50% center;
+}
+main > .oneday article{}
+main > .oneday article > a{}
+main > .oneday article > a > img{
+    margin-top: 50px;
+}
+
+
+/* vegetable */
+main > .vegetable{
+    height: 660px;
+}
+
+main > .vegetable > article{
+    padding: 60px 0px 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+main > .vegetable > article > ul{
+    width: 100%;
+    height: 312px;
+    margin-top: 36px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+main > .vegetable > article > ul > li{
+    float: left;
+    top: 0px;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+}
+main > .vegetable > article > ul > li > a{}
+main > .vegetable > article > ul > li > a > img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+main > .vegetable > article > ul > li > a > h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: #41392f;
+    margin-top: 12px;
+}
+main > .vegetable > article > ul > li > a > p{
+    font-size: 13px;
+    font-weight: bold;
+    color: #959595;
+    margin: 12px 0 26px;
+}
+main > .vegetable > article > ul > li > a > h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6a00;
+}
+main > .vegetable > article > a{
+    display: block;
+    width: 300px;
+    height: 50px;
+    border: 1px solid #efefef;
+    box-shadow: 0px 2px 2px #999;
+    text-align: center;
+    line-height: 50px;
+    margin: 56px auto 0;
+    color: #626262;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* premium */
+main > .premium{
+    height: 200px;
+    background: url(../img/premium_bg.png);
+    background-size: cover;
+    background-position: 50% center;
+}
+main > .premium > article{
+    text-align: center;
+}
+main > .premium > article > a{}
+main > .premium > article > a > img{
+    margin-top: 52px;
+}
+/* seafood */
+
+main > .seafood{
+    height: 660px;
+}
+
+main > .seafood > article{
+    padding: 60px 0px 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+main > .seafood > article > ul{
+    width: 100%;
+    height: 312px;
+    margin-top: 36px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+main > .seafood > article > ul > li{
+    float: left;
+    top: 0px;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+}
+main > .seafood > article > ul > li > a{}
+main > .seafood > article > ul > li > a > img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+main > .seafood > article > ul > li > a > h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: #41392f;
+    margin-top: 12px;
+}
+main > .seafood > article > ul > li > a > p{
+    font-size: 13px;
+    font-weight: bold;
+    color: #959595;
+    margin: 12px 0 26px;
+}
+main > .seafood > article > ul > li > a > h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6a00;
+}
+main > .seafood > article > a{
+    display: block;
+    width: 300px;
+    height: 50px;
+    border: 1px solid #efefef;
+    box-shadow: 0px 2px 2px #999;
+    text-align: center;
+    line-height: 50px;
+    margin: 56px auto 0;
+    color: #626262;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* footer */
+footer{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+footer > div{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer > div > div{
+    width: 1100px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+footer > div:nth-child(1){
+    height: 50px;
+    background-color: #626262;
+}
+
+footer > div > div > .terms{
+    float: left;
+    margin-top: 14px;
+    color: #eee;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+footer > div > div > .terms a{
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+footer > div > div > .terms a:nth-child(1){
+    color: #ff6a00;
+}
+footer > div:nth-child(2){
+    height: 156px;
+    background-color: #434343;
+}
+
+footer > div:nth-child(2) > div{}
+footer > div:nth-child(2) > div > .info{
+    float: left;
+    margin-top: 16px;
+    color: #aca9a9;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 26px;
+}
+footer > div:nth-child(2) > div > img{
+    float: right;
+    margin-top: 16px;
+}
