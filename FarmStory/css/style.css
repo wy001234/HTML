@@ -1,0 +1,151 @@
+
+*{margin: 0; padding: 0; font: normal 12px '돋움체';} 
+/* 초기화 */
+ul,ol{list-style: none;}
+a{text-decoration: none; color: #333;}
+input, textarea{outline : none;}
+
+#wrapper{
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+/* 헤더 */
+header{
+    width: 100%;
+    height: 142px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+header > div{
+    float: left;
+    width: 33.33%;
+    height: 60%;
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+
+header > div:nth-child(4){
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+header > div:nth-child(4) > div{
+    float: left;
+    width: 20%;
+    height: 100%;
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+header > img{
+  
+}
+/* 메인 */
+main{
+    width: 100%;
+    height: auto;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+
+main > div{
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid green;
+}
+
+
+/* 메인 슬라이드 */
+main > .slider{
+    position: relative;
+    height: 312px;
+}
+
+main > .slider > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+main > .slider > div > img{
+    top: 0;
+    left: 0;
+}
+
+/* 메인 퀵 */
+
+main > .quick{
+    height: 74px;
+    overflow: hidden;
+}
+
+main > .quick > div{
+    float: left;
+    width: 50%;
+    height: 100%;
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+
+/* 메인 게시판 */
+
+main > .latest{
+    height: 186px;
+    overflow: hidden;
+}
+
+main > .latest > div{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    border: 1px solid orange;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+main > .latest > div > div:nth-child(1){
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+    border: 1px solid skyblue;
+}
+main > .latest > div > div > img{
+    width: 50%;
+    height: 70%;
+}
+
+main > .latest > div > div:nth-child(2){
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid saddlebrown;
+    box-sizing: border-box;
+}
+
+main > .info{
+    height: 154px;
+    overflow: hidden;
+}
+
+main > .info > div{
+    float: left;
+    height: 100%;
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+main > .info > div:nth-child(1){width: 386px;}
+main > .info > div:nth-child(2){width: 230px;}
+main > .info > div:nth-child(3){width: 358px;}
+
+/* 푸터 */
+footer{
+    margin-top: 10px;
+    width: 100%;
+    height: 120px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
